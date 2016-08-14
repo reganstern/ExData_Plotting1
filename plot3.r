@@ -19,7 +19,7 @@ png(file="plot3.png")
 plot(rtime,powerData$Sub_metering_1, type="l", ylab = "Energy sub metering", xlab = "")
 points(rtime,powerData$Sub_metering_2, type="l", col="red")
 points(rtime,powerData$Sub_metering_3, type="l", col="blue")
-legend("toprigh", pch = "---", col=c("black", "red", "blue"), 
+legend("toprigh", lty = 1, col=c("black", "red", "blue"), 
          legend=c("Sub_meter_1", "Sub_meter_2", "Sub_meter_3"))
 dev.off()
 rm("powerData", "rtime", "getPowerData")
